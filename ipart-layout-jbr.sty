@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-jbr}
-\def\fmt@version{2021/12/14 v0.01}
+\def\fmt@version{2022/11/25 v0.02}
 \ProvidesPackage{\ipfmt@name}[\fmt@version\space INTLPRESS journal JBR style]
 \let\ipfmt@version\fmt@version
 %%
@@ -1354,6 +1354,8 @@
     \@xsect{#3}%
     }
 
+\RequirePackage{textcase}
+
 \setcounter{secnumdepth}{4}
 
 %%  \phantomsection is defined in hyperref
@@ -1364,7 +1366,7 @@
     \@startsection{section}{1}{\z@}%
                   {\medskipamount}%
                   {\smallskipamount}%
-                  {\centering\sffamily\large\bfseries\mathversion{bold}\MakeUppercase}%
+                  {\centering\sffamily\large\bfseries\mathversion{bold}\MakeTextUppercase}%
     }
 \renewcommand\subsection{%
     \@startsection{subsection}{2}{12\p@}%
