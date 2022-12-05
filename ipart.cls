@@ -226,9 +226,9 @@
 %%  ======= VTeX SETUP =======
 %%
 \AtEndOfPackage{%
-    % \IfFileExists{ipart-vtex\journal@id.sty}%
-        % {\RequirePackage{ipart-vtex\journal@id}}%
-        % {\IfFileExists{ipart-vtex.sty}{\RequirePackage{ipart-vtex}}{}}%
+    \IfFileExists{ipart-vtex\journal@id.sty}%
+        {\RequirePackage{ipart-vtex\journal@id}}%
+        {\IfFileExists{ipart-vtex.sty}{\RequirePackage{ipart-vtex}}{}}%
     \if@load@natbib@
         \@ifundefined{load@natbib}{}{\load@natbib}%
     \fi
