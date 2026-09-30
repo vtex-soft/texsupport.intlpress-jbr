@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \def\ipfmt@name{ipart-layout-jbr}
-\def\fmt@version{2026/05/25 v0.12}
+\def\fmt@version{2026/09/30 v0.13}
 \ProvidesPackage{\ipfmt@name}[\fmt@version\space INTLPRESS journal JBR style]
 \let\ipfmt@version\fmt@version
 %%
@@ -587,7 +587,7 @@
 \bfseries\scshape}
 \def\title@skip{36\p@}
 
-\ifnum\jobstart@date@info>22220003\relax
+\ifnum\jobstart@date@info>20260930\relax
     \def\title{%
         \@ifnextchar[%
         {\PackageError{ipart-layout-jbr}{\string\title[]{} optional parameter forbidden. Use \string\runtitle{} instead}{}}%
